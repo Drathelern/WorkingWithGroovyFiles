@@ -17,5 +17,5 @@ def repoclone(){ //defines a function to clone the repositories to the Jenkins' 
         checkout([$class: 'GitSCM', branches: [[name: '*/'+'master']], 
 doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory'], [$class: 
 'MessageExclusion', excludeMessage: '(?s).*JENKINS_IGNORE.*']], submoduleCfg: [], userRemoteConfigs: 
-[[url:"https://github.com/Drathelern/WorkingWithGroovyFiles.git"]]
+[[url:"https://github.com/Drathelern/WorkingWithGroovyFiles.git"]])
         }
